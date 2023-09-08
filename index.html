@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babbel Dubbing</title>
+    <!-- Ajoutez ici des liens vers vos fichiers CSS pour le style -->
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+    <script src="script/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</head>
+<body>
+
+    <div id="google_translate_element"></div>
+
+    <header>
+        <h1>Speech dubbing</h1>
+        <img src="/media/babbel.png" alt="Mon Logo">
+        <p>Restranscrivez vos vidéos dans n'importe quelle langue.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="utilisation.html">Utilisation API</a></li>
+            <li><a href="exemples.html">Exemples</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Introduction</h2>
+            <p class="translate" data-lang="en">Bienvenue chez Babbel Dubbing, où nous souhaitons stoper la barrière que représente le langage. C'est ce que nous apprend l'épisode biblique de la tour de babbel: lorsque la connaissance, la création et la fraternité deviens un outil puissant, les dieux sont dans l'obligation de diviser l'homme par le langage. </p> 
+            <p>Et si on arrêterait cela ? Si toute la connaissance sur internet deviendrait accessible à tout le monde sans avoir le problème de ne pas comprendre ? Et si tout serais traduit dans toutes les langues ? Tout le texte devient aujourd'hui facilement accessible à l'ensemble des personnes qui ont accès aux outils de traduction.</p>
+            <p>Mais qu'en est-il de l'audio visuel ? Les sous-titres existes, certes, mais cela réduit beaucoup la qualité d'une vidéo qu'on ne regarde désormais plus tellement nos yeux sont attirés par le bas de l'écran, et puis, écouter c'est tout de même meilleur et plus simple, lorsque l'on fait du sport, qu'on cuisine ou autre... Il existe aussi le doublage, mais cela nécéssite de grand moyen et prend du temps.</p>
+            <p>Au finale, il ne reste plus qu'une option pour rendre accessible à tout le monde n'importe quelle type de donnés sur internet: le doublage automatique.</p>
+            <p>Grâce aux outils qui s'offrent à nous, nous éspérons que chaque créateurs de contenues qui propage du savoir puisse doubler ses vidéos à bas coûts et rapidement.</p>
+        </section>
+
+        <section>
+            <h2>Comment ça marche ?</h2>
+            <p>Le doublage automatique fonctionne en trois temps:</p>
+            <p>1.générer l'horodatage de la vidéo, afin de savoir quand et sur combien de temps une personne parle. <b>Attention !</b> La transcription de la vidéo peut contenir des erreurs en ce qui concerne les mots propres, les expressions et autre... Il sera donc nécéssaire de faire une vérification.</p>
+            <p>2.Générer l'audio des phrases à partir de modèle génératif, Babbel Dubbing utilise l'un des plus performants du marché: WaveNet. Vous pouvez donc consulter l'ensemble des voix disponibles dans chacune des langues sur le site <a target="_blank" rel="noopener noreferrer" href="https://cloud.google.com/text-to-speech/docs/voices?hl=en"> de Google Cloud.</a></p>
+            <p>3.Assemblez les audios au bon moment de la vidéo.</p>
+            <p>C'est comme cela que nous voulous contribuer à un monde où chacun pourrait doubler son contenu à bas prix, rapidement et sans limite de temps.</p>
+        </section>
+
+        <section>
+
+            <h2>Démonstration du doublage automatique Babbel Dubbing.</h2>
+
+            <div class="video-container">
+                <div class="video">
+                    <h3>Français</h3>
+                    <video controls width="320">
+                        <source src="/media/original_video.mp4" type="video/mp4">
+                        Votre navigateur ne prend pas en charge la lecture vidéo.
+                    </video>
+                </div>
+                <div class="video">
+                    <h3>Anglais</h3>
+                    <video controls width="320">
+                        <source src="/media/dubbed_video.mp4" type="video/mp4">
+                        Votre navigateur ne prend pas en charge la lecture vidéo.
+                    </video>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © Babbel Dubbing</p>
+    </footer>
+</body>
+</html>

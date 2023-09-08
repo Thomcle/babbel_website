@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Babbel Dubbing</title>
+    <!-- Ajoutez ici des liens vers vos fichiers CSS pour le style -->
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+    <script src="script/script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+
+    <div id="google_translate_element"></div>
+
+    <header>
+        <h1>Speech dubbing API</h1>
+        <p>Restranscrivez vos vidéos dans n'importe quelle langue.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="utilisation.html">Utilisation API</a></li>
+            <li><a href="exemples.html">Exemples</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+
+            <h2>Démonstration du doublage automatique Babbel Dubbing.</h2>
+            <p>À gauche vous trouverez la vidéo originale et à droite la vidéo doublée en Anglais avec la voix "en-US-Wavenet-A"</p>
+            <p>Toute les voix disponibles de Babbel Dubbing sont visible sur <a href="https://cloud.google.com/text-to-speech/docs/voices?hl=en">ce site web</a></p>
+
+            <div class="video-container">
+                <div class="video">
+                    <h3>Vidéo originale en français :</h3>
+                    <video controls width="320">
+                        <source src="/media/original_video.mp4" type="video/mp4">
+                        Votre navigateur ne prend pas en charge la lecture vidéo.
+                    </video>
+                </div>
+                <div class="video">
+                    <h3>Vidéo doublée en anglais :</h3>
+                    <video controls width="320">
+                        <source src="/media/dubbed_video.mp4" type="video/mp4">
+                        Votre navigateur ne prend pas en charge la lecture vidéo.
+                    </video>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © 2023 Babbel Dubbing</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5; /* Espacement entre les lignes pour une meilleure lisibilité */
+}
+
+header {
+    background-color: #d96619; /* Orange */
+    color: #fff; /* Texte blanc */
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 11vw; /* Largeur souhaitée */
+    height: auto; /* Hauteur automatique pour conserver les proportions de l'image */
+    margin-right: 20px; /* Espacement entre le logo et le titre */
+}
+
+nav {
+    background-color: #333; /* Noir */
+    color: #fff; /* Texte blanc */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    background-color: #fff; /* Blanc */
+    color: #333; /* Texte noir */
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ff6600; /* Bordure orange */
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333; /* Noir */
+    color: #fff; /* Texte blanc */
+    padding: 20px;
+    text-align: center;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.video {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+video {
+    border: 5px solid rgb(24, 22, 22);
+    border-radius: 20px;
+}
+
+#google_translate_element select{
+    background-color:#f6edfd;
+    color:#383ffa;
+    border: none;
+    border-radius:3px;
+    padding:6px 8px
+}
+
+.goog-tooltip {
+    display: none !important;
+}
+.goog-tooltip:hover {
+    display: none !important;
+}
+.goog-text-highlight {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
